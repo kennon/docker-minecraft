@@ -11,10 +11,10 @@
 if [ ! -f /data/minecraft_server.jar ]
 then
     cd /data
-    cp /usr/local/etc/minecraft/ops.txt .
-    cp /usr/local/etc/minecraft/white-list.txt .
-    cp /usr/local/etc/minecraft/server.properties .
-    curl https://s3.amazonaws.com/Minecraft.Download/versions/1.8.9/minecraft_server.1.8.9.jar -o minecraft_server.jar
+    cp -n /usr/local/etc/minecraft/ops.txt .
+    cp -n /usr/local/etc/minecraft/white-list.txt .
+    cp -n /usr/local/etc/minecraft/server.properties .
+    curl https://s3.amazonaws.com/Minecraft.Download/versions/1.9/minecraft_server.1.9.jar -o minecraft_server.jar
 fi
 
 

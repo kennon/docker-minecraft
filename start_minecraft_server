@@ -1,2 +1,2 @@
 #!/bin/bash
-docker run -d -p=25565:25565 -v=/home/minecraft/data:/data --name minecraft_server kennon/minecraft_server
+docker run -d --restart=always -p=25565:25565 -v=/data:/data --name minecraft_server kennon/minecraft_server
