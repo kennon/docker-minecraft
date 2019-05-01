@@ -5,7 +5,7 @@ services:
     ports:
       - "0.0.0.0:25565:25565"
     volumes:
-      - "/mnt/data/minecraft:/data"
+      - "/data/minecraft:/data"
       - "./supervisor/supervisord.conf:/etc/supervisor/supervisord.conf"
       - "./supervisor/conf.d/minecraft.conf:/etc/supervisor/conf.d/minecraft.conf"
       - "./minecraft/ops.txt:/usr/local/etc/minecraft/ops.txt"

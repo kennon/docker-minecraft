@@ -43,5 +43,5 @@ volume ["/data"]
 workdir /data
 #cmd    ["/start"]
 
-cmd java -Xmx2048M -Xms2048M -jar minecraft_server.jar
+cmd java -Xmx4096M -Xms4096M -jar minecraft_server.jar
 
